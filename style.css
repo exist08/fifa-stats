@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #252525;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    background: rgb(12, 55, 56);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+header a{
+    all: inherit;
+    cursor: pointer;
+}
+h1{
+    text-transform: uppercase;
+}
+main{
+    background: cornflowerblue;
+    height: 90vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main h1{
+    font-size: 10rem;
+}
+main p{
+    font-size: 30px;
+    line-height: 28px;
+    text-align: center;
+}
+main button{
+    font-size: 30px;
+    padding: 10px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: aqua;
+    outline: none;
+    border: none;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: .5s;
+}
+main button:hover{
+    background: #252525;
+    color: aqua;
+}
+
+section{
+    height: 100vh;
+    background: lemonchiffon;
+}
+
+.cards{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    background: lawngreen;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+}
+.card>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card a{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(240, 230, 140,.5);
+    top: 100%;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+}
+.card:hover{
+    transform: scale(1.2);
+}
+.card:hover a{
+    top: 0;
+}
+section#bhadbhada{
+    background: lightcoral;
+}
+section{
+    padding: 30px 100px;
+}
+section h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+section>img{
+    height: 300px;
+    display: block;
+}
+section p{
+    font-size: 1.5rem;
+    margin: 1em 0;
+}
+section button{
+    padding: 10px 20px;
+    background: lightgreen;
+    color: rebeccapurple;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+
+section#temple{
+    background: orange;
+}
+section#bridge{
+    background: rgb(11, 62, 62);
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        padding: 0 5vw;
+    }
+    header h1{
+        font-size: 5vw;
+    }
+    span.hide-mob{
+        display: none;
+    }
+    main{
+        padding: 4vw;
+    }
+    main h1{
+        font-size: 14vw;
+    }
+    .cards{
+        flex-direction: column;
+        padding: 5vw;
+    }
+    .cards .card{
+        width: 100%;
+    }
+    section{
+        height: unset;
+        min-height: 100vh;
+        padding: 3vw 5vw 8vw;
+    }
+    section>img{
+        width: 100%;
+        object-fit: cover;
+    }
+    section p{
+        font-size: 1rem;
+        margin: 1em 0;
+    }
+}
